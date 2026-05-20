@@ -1,0 +1,34 @@
+.center {
+  text-align: center;
+}
+
+#mur {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+#mur img {
+  width: 100%;
+  display: block;
+}
+
+.mur-item {
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  #mur {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #mur {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sub-image {
+  display: flex;
+  justify-content: space-between;
+}
